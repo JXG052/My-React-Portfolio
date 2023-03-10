@@ -1,6 +1,6 @@
 import React from "react";
 
-function Discover() {
+function Contact() {
   return (
     <div>
       <h1>Discover</h1>
@@ -20,4 +20,4 @@ function Discover() {
   );
 }
 
-export default Discover;
+export default Contact;
