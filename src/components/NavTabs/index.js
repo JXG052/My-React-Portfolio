@@ -1,5 +1,7 @@
 import React from 'react';
+import './NavTabs.css'
 import { NavLink } from 'react-router-dom';
+
 
 function NavTabs() {
   return (
@@ -11,12 +13,12 @@ function NavTabs() {
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
           }
-          style={({isActive}) => {
-            return{
-             fontWeight: isActive ? "bold" : "",
-             color: isActive? "Green" : "blue",
-            };
-           }}
+          // style={({isActive}) => {
+          //   return{
+          //    fontWeight: isActive ? "bold" : "",
+          //    color: isActive? "Green" : "blue",
+          //   };
+          //  }}
         >
           Home
         </NavLink>
@@ -28,12 +30,12 @@ function NavTabs() {
             isActive ? 'nav-link active' : 'nav-link'
           }
 
-          style={({isActive}) => {
-           return{
-            fontWeight: isActive ? "bold" : "",
-            color: isActive? "Green" : "blue",
-           };
-          }}
+          // style={({isActive}) => {
+          //  return{
+          //   fontWeight: isActive ? "bold" : "",
+          //   color: isActive? "Green" : "blue",
+          //  };
+          // }}
         >
           Portfolio
         </NavLink>
@@ -44,12 +46,12 @@ function NavTabs() {
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
           }
-          style={({isActive}) => {
-            return{
-             fontWeight: isActive ? "bold" : "",
-             color: isActive? "Green" : "blue",
-            };
-           }}
+          // style={({isActive}) => {
+          //   return{
+          //    fontWeight: isActive ? "bold" : "",
+          //    color: isActive? "Green" : "blue",
+          //   };
+          //  }}
         >
           Contact
         </NavLink>
