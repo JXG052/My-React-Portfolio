@@ -6,7 +6,7 @@ import Portfolio from './pages/portfolio/Portfolio';
 import Contact from './pages/contact/Contact';
 import Header from './components/Header/index'
 import Footer from './components/Footer/index';
-import ProjectData from './project-data.JSON'
+
 
 function App() {
   return (
