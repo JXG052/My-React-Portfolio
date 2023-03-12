@@ -5,6 +5,8 @@ import Home from './pages/home/Home';
 import Portfolio from './pages/portfolio/Portfolio';
 import Contact from './pages/contact/Contact';
 import Header from './components/Header/index'
+import Footer from './components/Footer/index';
+import ProjectData from './project-data.JSON'
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="Portfolio" element={<Portfolio />} />
         <Route path="Contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   </Router>
   );
