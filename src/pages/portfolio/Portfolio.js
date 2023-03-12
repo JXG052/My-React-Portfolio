@@ -1,12 +1,11 @@
 import React from "react";
+import ProjectGallery from "../../components/Project-Gallery";
 
 function Search() {
   return (
     <div>
-        <h1>Search:</h1>
-        <input type="text" name="search" placeholder="search here"></input>
-    </div>
-  );
+        <ProjectGallery />
+    </div>);
 }
 
 export default Search;

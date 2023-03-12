@@ -1,0 +1,10 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+}
