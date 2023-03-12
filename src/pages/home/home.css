@@ -1,0 +1,29 @@
+.home-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    align-items: center;
+}
+
+.greeting-section{
+    padding: 5px;
+    margin: 20px;
+    font-size: 30px
+}
+
+.greeting-section > button {
+    border-radius: 20px;
+    background-color: #06d6a0ff;
+    border-color: none;
+    height: 5vh;
+    width: 10vw;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.greeting-section > button:hover {
+    color: #06d6a0ff;
+    background-color: #f8ffe5ff;
+}
