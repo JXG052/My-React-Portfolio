@@ -1,20 +1,27 @@
 import React, {useState} from "react";
 import ProjectCard from "../../components/Project-Card/index";
 import ProjectData from '../../project-data.json'
+import './portfolio.css'
+
 
 function Portfolio() {
   
   const [projects, setProject] = useState(ProjectData);
-  console.log(projects[0].title)
+  
   return (
     <div>
+      {projects.map((project) => (
         <ProjectCard
-            title = {projects[0].title}
-            deployed = {projects[0].deployed}
-            repo = {projects[0].repo}
-            image = {projects[0].image}
-            tech = {projects[0].tech}
+            key = {project.key}
+            title = {project.title}
+            deployed = {project.deployed}
+            repo = {project.repo}
+            image = {project.image}
+            tech = {project.tech}
           />
+      )
+      )}
+
     </div>);
 }
 

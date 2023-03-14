@@ -1,15 +1,51 @@
 [{
-    "title": "Palindrome Checker",
-    "deployed": "https://jxg052.github.io/palindrome-checker/",
-    "repo": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "image": "../public/assets/palindrome-bob.jpg",
+    "key": "Code",
+    "title": "Code Quiz",
+    "deployed": "https://jxg052.github.io/Code-Quiz/",
+    "repo": "https://github.com/JXG052/Code-Quiz",
+    "image": "./images/code-quiz.png",
     "tech": "Javascript"
   },
   {
-    "title": "Palindrome Checker",
-    "deployed": "https://jxg052.github.io/palindrome-checker/",
-    "repo": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "image": "images/palindrome-bob.png",
+    "key": "Caesers",
+    "title": "Caesers Cipher",
+    "deployed": "https://jxg052.github.io/Caesers-Cipher/",
+    "repo": "https://github.com/JXG052/Caesers-Cipher",
+    "image": "./images/caesers-cipher.jpg",
+    "tech": "Javascript"
+  },
+  {
+    "key": "Planner",
+    "title": "Day Planner",
+    "deployed": "https://jxg052.github.io/Day-Planner/",
+    "repo": "https://github.com/JXG052/Day-Planner",
+    "image": "./images/day-planner.png",
+    "tech": "Javascript"
+  },
+  {
+    "key": "password",
+    "title": "Password Generator",
+    "deployed": "https://jxg052.github.io/password-generator/",
+    "repo": "https://github.com/JXG052/password-generator",
+    "image": "./images/password-generator-screenshot.png",
+    "tech": "Javascript"
+  },
+  {
+    "key": "weather",
+    "title": "Weather Dashboard",
+    "deployed": "https://jxg052.github.io/Weather-Dashboard/",
+    "repo": "https://github.com/JXG052/Weather-Dashboard",
+    "image": "./images/weather.png",
+    "tech": "Javascript"
+  }, 
+  {
+    "key": "globey",
+    "title": "Globey",
+    "deployed": "https://jxg052.github.io/globey/",
+    "repo": "https://github.com/JXG052/globey",
+    "image": "./images/globey.png",
     "tech": "Javascript"
   }
 ]
+
+ 
