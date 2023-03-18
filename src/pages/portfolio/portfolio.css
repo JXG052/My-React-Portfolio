@@ -1,9 +1,7 @@
 .project-card {
-    border: 1pt solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1pt solid black;
     max-width: 500px;
     margin: auto auto;
 }
@@ -11,4 +9,9 @@
 .project-card > img {
     max-height: 200px;
     max-width: 200px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

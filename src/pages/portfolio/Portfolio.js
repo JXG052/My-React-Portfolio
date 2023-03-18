@@ -9,7 +9,7 @@ function Portfolio() {
   const [projects, setProject] = useState(ProjectData);
   
   return (
-    <div>
+    <div className="project-grid">
       {projects.map((project) => (
         <ProjectCard
             key = {project.key}
