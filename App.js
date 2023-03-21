@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Portfolio from './pages/portfolio/Portfolio';
-import Contact from './pages/contact/Contact';
-import Header from './components/Header/index'
-import Footer from './components/Footer/index';
+import Home from './src/pages/home/Home';
+import Portfolio from './src/pages/portfolio/Portfolio';
+import Contact from './src/pages/contact/Contact';
+import Header from './src/components/Header/index'
+import Footer from './src/components/Footer/index';
 
 
 function App() {
