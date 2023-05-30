@@ -18,6 +18,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useStyles } from '../../style';
+import { NavLink } from 'react-router-dom';
 
 // import './DrawerAppBar.css'
 // import { useTheme } from '@mui/material/styles';
@@ -76,13 +77,17 @@ function DrawerAppBar(props) {
             </Typography>
           </Typography>
 
-          <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
+          <Box sx={{ pr: 2, display: { xs: 'none', lg: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: 'black', fontSize: '1.5rem' }}>
+              <NavLink 
+                to={`/${item.toLowerCase()}`} 
+                key={item} 
+                style={{color: 'black', textDecoration: 'none', paddingRight: '10px', fontSize: '2rem'}}
+              >
                 {item}
-              </Button>
+              </NavLink>
             ))}
-          </Box>
+          </Box >
           <IconButton
             color="inherit"
             aria-label="open drawer"
