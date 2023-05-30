@@ -1,18 +1,14 @@
 import React from "react";
-import Profile from './profile.png'
-import './home.css'
+// import './home.css'
+import { useStyles } from "../../style";
+import Jumbotron from "../../components/Jumbotron/Jumbotron";
+
 
 function Home() {
+  const classes = useStyles();
+
   return (
-    <div className="home-section">
-      <div className="greeting-section">      
-        <p>Hi There, I'm Jon Green, a Front-End Web Developer</p>
-        <button>About me</button>
-      </div>   
-      <img src={Profile} style={{maxHeight: "300px"}} alt="profile" />
-    </div>
-      
-     
+    <Jumbotron />
   );
 }
 

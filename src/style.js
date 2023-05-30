@@ -3,6 +3,7 @@ import { makeStyles } from '@mui/styles';
 export const useStyles = makeStyles((theme) => ({
     lightGreen: {
         backgroundColor: theme.palette.lightGreen.main
+
     },
     orange: {
         // style definitions
@@ -20,7 +21,8 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.offWhite.main
     },
     grey: {
-        backgroundColor: theme.palette.grey.main
+        backgroundColor: theme.palette.grey[300],
+        // color: theme.pallette.grey
     }
 
 }));

@@ -17,13 +17,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { useStyles } from './style';
+import { useStyles } from '../../style';
 
 // import './DrawerAppBar.css'
 // import { useTheme } from '@mui/material/styles';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'About', 'Services', 'Portfolio', 'Contact'];
 
 
 
@@ -31,7 +31,7 @@ function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const classes = useStyles();
- 
+
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -40,14 +40,16 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box className={classes.grey} onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        JONATHAN GREEN
+
       </Typography>
+
       <Divider />
-      <List>
+      <List sx={{ color: 'black' }}>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item} color='black' />
             </ListItemButton>
           </ListItem>
         ))}
@@ -58,33 +60,38 @@ function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box  sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" className={classes.grey}>
-        <Toolbar>
+      <AppBar component="nav">
+        <Toolbar className={classes.grey}>
+
+          <Typography
+            variant="h2"
+            component="div"
+            sx={{ flexGrow: 1, my: 1, display: { xs: 'flex', sm: 'block' }, textAlign: 'left', color: 'black' }}
+          >
+            JONATHAN GREEN
+            <Typography variant="h4" sx={{ my: 0, ml: 17.5, display: { xs: 'none' } }} >
+              FRONT-END DEVELOPER
+            </Typography>
+          </Typography>
+
+          <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
+            {navItems.map((item) => (
+              <Button key={item} sx={{ color: 'black', fontSize: '1.5rem' }}>
+                {item}
+              </Button>
+            ))}
+          </Box>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { lg: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            MUI
-          </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
         </Toolbar>
       </AppBar>
       <Box component="nav">
