@@ -1,3 +1,8 @@
+@import url('../../colors.css');
+
+.drawer {
+    background-color: black;
+}
 .nav {
     display: flex;
     justify-content: flex-end;
