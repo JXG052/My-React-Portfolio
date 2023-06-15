@@ -26,7 +26,7 @@ function App() {
       
       {/* Wrap Route elements in a Routes component */}
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
