@@ -1,9 +1,13 @@
+@import url('../../colors.css');
+
 .home-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: black;
     align-items: center;
+    border:1pt 6px black;
+    background-color: #F7F4EA;
 }
 
 .greeting-section{
@@ -14,7 +18,7 @@
 
 .greeting-section > button {
     border-radius: 20px;
-    background-color: #06d6a0ff;
+    background-color: var(--button-color-primary);
     border-color: none;
     height: 5vh;
     width: 10vw;
