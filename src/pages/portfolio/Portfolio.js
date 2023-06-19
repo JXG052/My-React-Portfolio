@@ -10,10 +10,8 @@ function Portfolio() {
 
   return (
     <>
+      
 
-    <div>
-      This will be my portfolio page
-    </div>
     </>
   );
 }
