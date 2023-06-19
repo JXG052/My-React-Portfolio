@@ -30,7 +30,7 @@ export default function About() {
             </Box>
             <Box style={{ padding: '50px', height: '100vh', backgroundColor: theme.palette.offWhite.main, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Typography variant='h3'>
-                    💡 On my GitHub, you'll find a collection of my projects that showcase my skills, creativity, and problem-solving abilities. I am open to feedback and always striving to improve, so feel free to explore my repositories and provide any suggestions or insights.
+                    📫 If you're interested in collaborating, have any questions, or simply want to connect, please don't hesitate to reach out to me. I'm excited to be a part of the developer community and contribute to meaningful projects that make a difference.
                     </Typography>
             </Box>
         </>
