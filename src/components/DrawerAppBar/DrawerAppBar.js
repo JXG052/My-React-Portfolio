@@ -24,7 +24,7 @@ import { NavLink } from 'react-router-dom';
 // import { useTheme } from '@mui/material/styles';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Services', 'Portfolio', 'Contact'];
+const navItems = ['Home', 'About', 'Portfolio', 'Contact'];
 
 
 
