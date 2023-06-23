@@ -1,11 +1,14 @@
 import React from 'react'
-import { Card, CardActionArea, CardContent, Typography } from '@mui/material'
+import { Grid, Card, CardActionArea, CardContent, Typography } from '@mui/material'
 
-export default function ProjectItem() {
+
+// For each individual project to be displayed in the portfolio section
+export default function ProjectItem({ title, description, image }) {
+    const imagePath = process.env.PUBLIC_URL + '/images/' + image
     return (
         <Card>
             <CardActionArea>
-                <img src={image} alt={title} />
+                <img src={imagePath} alt={title} />
                 <CardContent>
                     <Typography gutterBottom variant='h5' component='div'>
                         {title}
