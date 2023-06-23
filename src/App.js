@@ -13,18 +13,8 @@ import DrawerAppBar from './components/DrawerAppBar/DrawerAppBar';
 function App() {
   return (
     <>
-
-
-
-
-
-
-
       <Router>
         <DrawerAppBar />
-
-
-
         {/* Wrap Route elements in a Routes component */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,8 +23,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-
-
       </Router>
     </>
   );
