@@ -1,29 +1,52 @@
-import React from "react";
-import Form from "../../components/Form/Form"
+import React, { useState } from "react";
+import { TextField, Button, Grid } from '@mui/material'
+// import './contact.css'
 
-import './contact.css'
+
+
 
 function Contact() {
   return (
-    <div className="contact-section">
-      <h1>Contact Me</h1>
-      <div class="contact-links">
-            <a href="https://www.linkedin.com/in/jonathangreenoj/" target="_blank" class="col-md-2 contact-details btn btn-primary">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/JXG052" target="_blank" class="col-md-2 contact-details btn btn-primary">
-                <i class="fab fa-github"></i> Github
-            </a>
-            <a href="mailto:jxg0521@gmail.com" class="col-md-2 contact-details btn btn-primary">
-                <i class="fas fa-at"></i> Send an email
-            </a>
-            <a href="tel:07809561335" class="contact-details col-md-2 btn btn-primary">
-                <i class="fas fa-mobile-alt"></i> Call me
-            </a>     
-      </div>
-      <Form />
-
-    </div>
+    <form
+      // onSubmit={handleSubmit}
+    >
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <TextField
+            required
+            fullWidth
+            label="Your Name"
+          // value={name}
+          // onChange={(event) => setName(event.target.value)}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            required
+            fullWidth
+            label="Your Email"
+          // value={email}
+          // onChange={(event) => event.target.value}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            required
+            fullWidth
+            label="Message"
+            multiline
+            rows={4}
+          // value={message}
+          // onChange={(event) => event.target.value}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <Button type="submit" variant="contained" color="primary">
+            Submit
+          </Button>
+        </Grid>
+      </Grid>
+    </form>
   );
 }
 

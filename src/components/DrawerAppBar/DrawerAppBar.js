@@ -39,7 +39,7 @@ function DrawerAppBar(props) {
   };
 
   const drawer = (
-    <Box className={classes.grey} onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box className={classes.grey} onClick={handleDrawerToggle} sx={{ textAlign: 'center', }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         JONATHAN GREEN
 
@@ -61,7 +61,7 @@ function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', m: 10 }}>
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar className={classes.grey}>
