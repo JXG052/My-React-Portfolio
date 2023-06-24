@@ -8,11 +8,15 @@ import About from './pages/about/About.js'
 // import Header from './components/Header/Header'
 // import Footer from './components/Footer/index';
 import DrawerAppBar from './components/DrawerAppBar/DrawerAppBar';
+import { Box } from '@mui/system';
+import { useTheme } from '@mui/material/styles';
+
 
 
 function App() {
+  const theme = useTheme();
   return (
-    <>
+    <Box sx={{ bgcolor: theme.palette.offWhite.main, height: '100vh' }}>
       <Router>
         <DrawerAppBar />
         {/* Wrap Route elements in a Routes component */}
@@ -24,7 +28,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-    </>
+    </Box>
   );
 }
 
