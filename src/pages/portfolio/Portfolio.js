@@ -1,10 +1,9 @@
-import React from "react";
-import ProjectItem from "../../components/ProjectItem";
-import { Grid } from '@mui/material'
-// import ProjectCard from "../../components/Project-Card/index";
-// import ProjectData from '../../project-data.json'
-// import './portfolio.css'
-
+import React from 'react';
+import ProjectItem from '../../components/ProjectItem';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { Grid } from '@mui/material';
 
 function Portfolio() {
   const projects = [
@@ -17,24 +16,55 @@ function Portfolio() {
       title: 'PG Paints',
       description: 'E-commerce platform selling the art of upcoming artist Phil Green',
       image: 'pgPaint.png'
-    }, 
+    },
     {
-      title: 'Globey', 
-      description: 'App to help children learn about different countries', 
+      title: 'Globey',
+      description: 'App to help children learn about different countries',
       image: 'globey.png'
     }
+  ];
 
-  ]
-  // const [projects, setProject] = useState(ProjectData);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      }
+    ]
+  };
+
 
   return (
-    <Grid container spacing={2}>
+    <div> Heeres some of my work...
+
+
+    <Slider {...settings}>
       {projects.map((project, index) => (
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item key={index} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', border: '1px solid blue'}}>
           <ProjectItem {...project} />
         </Grid>
       ))}
-    </Grid>
+    </Slider>
+
+      </div>
   );
 }
 
