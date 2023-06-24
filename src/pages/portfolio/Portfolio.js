@@ -3,7 +3,7 @@ import ProjectItem from '../../components/ProjectItem';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Grid } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 
 function Portfolio() {
   const projects = [
@@ -53,18 +53,18 @@ function Portfolio() {
 
 
   return (
-    <div> Heeres some of my work...
+    <Typography variant='h3'> Here's some of the projects I have worked on so far
 
 
     <Slider {...settings}>
       {projects.map((project, index) => (
-        <Grid item key={index} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', border: '1px solid blue'}}>
+        <Grid item key={index} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <ProjectItem {...project} />
         </Grid>
       ))}
     </Slider>
 
-      </div>
+      </Typography>
   );
 }
 
