@@ -10,6 +10,7 @@ import { useTheme } from '@mui/material/styles';
 const Jumbotron = () => {
     // const classes = useStyles()
     const theme = useTheme();
+    const imagePath = process.env.PUBLIC_URL + '/images/' + 'avataaars-transparent.svg'
     return (
         <Box
             sx={{
@@ -23,6 +24,7 @@ const Jumbotron = () => {
                 bgcolor: theme.palette.offWhite.main
             }}
         >
+            <img src={imagePath}></img>
             <Typography variant="h1" component="h1" sx={{ color: 'black', marginBottom: '1rem' }}>
                 Welcome to My Portfolio
             </Typography>
